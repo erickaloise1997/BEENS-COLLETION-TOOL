@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&display=swap');
+
+:root {
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-green: #37af65;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+     
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+h1{background-color: blanchedalmond;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    text-align: center;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    padding: 40px;
+    background-color: blanchedalmond;
+
+
+}
+
+.menu-bar
+{
+    background: rgb(red, green, blue, alpha);
+    background-color: thistle;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    text-align: center;
+}
+
+.menu-bar ul
+{
+    list-style: none;
+    color: royalblue;
+
+}
+
+.menu-bar ul li
+{
+    width: 150px;
+    margin: 10px;
+    padding: 10;
+}
+
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color:black
+}
+.active,.menu-bar ul li :hover
+{
+    background: burlywood;
+    border-radius: 3px;
+
+}
+.menu-bar.fa
+{
+    margin-right: 4px;
+    font-size:xx-small;
+}
+
+.dropdown-menu{
+    display: none;
+}
+.menu-bar ul li:hover.dropdown-menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    background-color: var(--color-white);
+    
+}
+
+.dropdown-menu ul{
+    display: block;
+}
+.dropdown-menu ul li{
+    with: 150px;
+    padding: 10px;
+    
+}
+
+  
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+form {
+    /* Just to center the form on the page */
+    margin: 0 auto;
+    width: 70%;
+    /* To see the limits of the form */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    background-color: thistle;
+  }
+
+  textarea {
+    /* To properly align multiline text field with their label */
+    vertical-align: top;
+  
+    /* To give enough room to type some text */
+    height: 5em;
+  
+    /* To allow users to resize any textarea vertically
+       It works only on Chrome, Firefox and Safari */
+    resize: vertical;
+  }
+  input{
+    height: 20px;
+    border-radius: 5px;
+    }
+    body{
+        background-image: url(water.photo.jpg);
+    }
+    .card{
+    
+        border-radius: 10px;
+        box-shadow: 03px 10px rgba(0.0.0.2);
+        padding: 20px;
+        margin: 20px;
+    }
+    .dropdown {
+        display: inline-block;
+        position: relative;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        width: 100%;
+        overflow: auto;
+        box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+        
+      }
+      .dropdown-content a {
+        display: block;
+        color: #000000;
+        padding: 5px;
+        text-decoration: none;
+        
+      }
+ 
